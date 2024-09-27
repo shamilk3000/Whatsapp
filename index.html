@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3648fc3ee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>WhatsApp</title>
+
+    <style>
+      body
+     {
+        margin: 0;
+        background-color: #fcf5eb;
+     }
+     .header
+     {
+         position: fixed;
+         width: 100%;
+         height: 80px;
+         background-color: hsl(35, 74%, 95%,0.8) ;
+         top: 0;
+         left: 0;
+         right: 0;
+         display: inline-flex;
+         align-content: center;
+         font-size: 16px;
+         line-height: 30px;
+         font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+         font-weight: 400;
+         color: black; 
+     }
+     .link a
+     {
+        text-decoration-color: transparent;
+     }
+     .link a:hover
+     {
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #25d366;
+     }
+     .container
+     {
+        margin-top: 120px;
+        display: flex;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 30px;
+        background-image: url(https://scontent.whatsapp.net/v/t39.8562-34/316546300_547692113846445_7299710494491288098_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=26YDsykkx8kQ7kNvgEUXgiV&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIASzeLl_ZxYXo_12UvPD3OuvE0MrZTAslsMFwm2IiQQr&oe=66F852E5);
+     }
+     .colone1,.colone2
+     {
+        width: 500px;
+        height: 725px;
+        align-content:center;
+        margin-left: 100px;
+        font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #FFFFFF;
+     } 
+     .secondpart
+     {
+     width: 100%;
+     height: 300px;
+     }
+     .thirdpart
+     {
+     width: 100%;
+     height: 220px;
+     text-align: center;
+     align-content: center;
+     font-size: 45px;
+     line-height: 45px;
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     color: RGB(28, 30, 33);
+     }
+     .fourthpart
+     {
+     width: 100%;
+     height: 300px;
+     }
+     .container2
+     {
+        display: flex;
+     }
+     .colom21,.colom22
+     {
+     width: 100%;
+     height: 850px;
+     color: #27292b;
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-left: 250px;
+     align-content: center;
+     }
+    .container3
+     {
+        display: flex;
+        background-color: #111b21;
+     }
+     .colom31,.colom32
+     {
+     width: 100%;
+     height: 850px;
+     color: RGB(255, 255, 255);
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-left: 250px;
+     align-content: center;
+     }
+    .container4
+     {
+        display: flex;
+     }
+    .colom41,.colom42
+    {
+     width: 100%;
+     height: 850px;
+     color: #27292b;
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-left: 250px;
+     align-content: center;
+    }
+    .colom42
+    {
+     margin-top: -100px;
+    }
+    .container5
+    {
+        display: flex;
+    }
+    .colom51,.colom52
+    {
+     width: 100%;
+     height: 850px;
+     color: #27292b;
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-left: 250px;
+     align-content: center;
+    }
+    .container6
+    {
+        display: flex;
+    }
+    .colom61,.colom62
+    {
+     width: 100%;
+     height: 850px;
+     color: #27292b;
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-left: 200px;
+     align-content: center;
+    }
+    .colom21 a,.colom41 a,.colom52 a,.colom61 a
+    {
+    color: #27292b;
+    text-underline-offset: 5px;
+    }
+    .colom32 a
+    {
+     color: #FFFFFF; 
+     text-underline-offset: 5px;
+    }
+    .colom21 a:hover,.colom32 a:hover,.colom41 a:hover,.colom52 a:hover,.colom61 a:hover
+    {
+    color: #52f429e2;   
+    }
+    .footer
+    {
+        display: flex;
+        background-color: #111b21;
+    }
+     .foot1,.foot2,.foot3,.foot4,.foot5,.foot6,.foot7
+     {
+        width: 100%;
+        height: 300px;
+        color: #F0F4F9;
+        font-family: Helvetica, Arial, sans-serif;
+        margin-top: 100px;
+     }
+     .foot3
+     {
+        margin-left: 40px;
+     }
+     .footer a
+    {
+      text-decoration: underline;text-decoration-color: transparent;
+    }
+     .footer a:hover
+     {
+        text-decoration-color: #FFFFFF;
+     }
+     .line
+     {
+    border: none;
+    height: .1px;
+    background-color: rgb(246, 246, 246);
+    width: 71%;
+    margin: 0;
+    margin-left: 200px;
+     }
+     .linediv
+     {
+        background-color:#111b21 ;
+     }
+     .lastpart
+     {
+     width: 100%;
+     height: 80px;
+     background-color: #111b21;
+     color: #F0F4F9;
+     font-size: 12px;
+     align-content: center;
+     font-family: Helvetica, Arial, sans-serif;
+     margin-top: -16px;
+     display: inline-flex;
+     }
+     .lasttext4 select
+     {
+        width: 210px;
+        height: 50px;
+        color: #FFFFFF;
+        background-color:#111b21 ;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-left: 220px;
+        border-radius: 50px;
+        padding: 10px;
+        border-width: 1.5px;
+        border-color: #FFFFFF;
+     }
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+        <a href=""><img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" style="margin-left: 50px;margin-top: 25px;"></a>
+        <div class="link">
+        <button style="margin-left:190px; background-color: transparent;border: none;font-size: medium;padding: 0;margin-top: 25px;"><a href="" style="color: black;">Features <i class="fa-solid fa-chevron-down"></i></a></button>
+        <button style="margin-left: 40px; background-color: transparent;border: none;font-size: medium;padding: 0;"><a href="" style="color: black;">Privacy</a></button>
+        <button style="margin-left: 40px; background-color: transparent;border: none;font-size: medium;padding: 0;"><a href="" style="color: black;">Help Center</a></button>
+        <button style="margin-left: 40px; background-color: transparent;border: none;font-size: medium;padding: 0;"><a href="" style="color: black;">Blog</a></button>
+        <button style="margin-left: 40px; background-color: transparent;border: none;font-size: medium;padding: 0;"><a href="" style="color: black;">For Business</a></button>
+        <button style="margin-left: 40px; background-color: transparent;border: none;font-size: medium;padding: 0;"><a href="" style="color: black;">WhatsApp Web</a></button>
+        <button style="margin-left: 40px; background-color: transparent;border: none;font-size: medium;padding: 0;"><a href="" style="color: black;">Download</a></button>
+        </div>
+        <button style="background-color: #25d366;border-radius: 40px;width: 150px;height: 50px;font-size: medium;margin-left: 130px;border-color: black;margin-top: 15px;"><a href="" style="color: black;text-decoration-color: transparent;">Download    <i class="fa-solid fa-arrow-down"></i></a></button>
+    </div>
+
+    <div class="container">
+        
+        <div class="colone1">
+             <h1 style="font-size: 80px;letter-spacing: -0.04em;line-height: 1;font-weight: 400;">Message<br>privately</h1>
+             <p style="font-weight: 400;font-size: 18px;line-height: 25px;letter-spacing: -0.01em;margin-top: -20px;">Simple, reliable, private messaging <br> and calling for free*, available all over <br> the world.</p>
+             <br><br><button style="background-color: #25d366;border-radius: 40px;width: 150px;height: 50px;font-size: medium;border: 0;cursor: pointer;"><a href="" style="color: black;text-decoration-color: transparent;">Download    <i class="fa-solid fa-arrow-down"></i></a></button>
+        </div>
+
+        <div class="colone2">
+             <img style="height: 45px;width: auto;" src="https://scontent.whatsapp.net/v/t39.8562-34/329792464_534173148815054_3736500652022655929_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=HHQmVDNqkGAQ7kNvgHuvrUj&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIHgGnkAXlVa3B51g89_T9lNuVBxkNl1sW51KSDDOjMMO&oe=66F879C3" >
+             <img style="height: 125px; ;width: auto;" src="https://scontent.whatsapp.net/v/t39.8562-34/318567080_617695970110803_5923371384204745052_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=ha3uoRhPsk8Q7kNvgG7rvzq&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIOfo73y7SOeSkjsPeSGI3wZbkDNjjr21QoSWiSNIfLTn&oe=66F85F66" >
+             <img style="height: 75px;width: auto;" src="https://scontent.whatsapp.net/v/t39.8562-34/327063196_5800887573364035_3294745791563659576_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=9cQlJBBMNkgQ7kNvgGkZyVL&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIHQXFPEyUhmJ8soJFD_RdnYW8989aY7am_Rm4JaXV4Li&oe=66F86A0E">
+             <img style="height: 300px;width: auto;" src="https://scontent.whatsapp.net/v/t39.8562-34/327713084_566495871797259_1779906837439389762_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=ZiIAl96MJeQQ7kNvgEMPxWP&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIPUaoTbpOSB_LZc48NQ2fAojvoFOwkcIvnX21hQil9sq&oe=66F8689B" >
+             <img style="height: 70px;width: auto;" src="https://scontent.whatsapp.net/v/t39.8562-34/323914620_1571722909934742_4947035793330347072_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=xDXIXsbNSWUQ7kNvgGldo7b&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIAZ_V94nacjHRtytMOw4W81aCbb1BsSZOJ2keCHnDw1f&oe=66F86CC8" >
+        </div>
+
+    </div>
+
+    <div class="secondpart">
+        <br><br><br>
+        <img style="width: auto;height: 245px;margin-left: 60px;" src="https://scontent.whatsapp.net/v/t39.8562-34/315574582_669241857978207_6336028129238262344_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=WnItyf4z3scQ7kNvgEW-do3&_nc_ht=scontent.whatsapp.net&_nc_gid=A1HwzJbOSj5vADERMzO7aUv&oh=01_Q5AaIJNumPPwyc8aIOoMjzGTV7s81akTp3pTOBvWRyTNqnlJ&oe=66F8518C">
+    </div>
+
+    <div class="thirdpart">
+         <p>With private messaging and calling, you can <br> be yourself, speak freely and feel close to the <br> most important people in your life no matter <br> where they are.</p>
+    </div>
+
+    <div class="fourthpart">
+         <br><br><br>
+         <img style="width: auto;height: 288px;margin-left: 60px;" src="https://scontent.whatsapp.net/v/t39.8562-34/315632381_5616928641708856_9210500231334849736_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=lbm0cYOKPgUQ7kNvgHQfsot&_nc_ht=scontent.whatsapp.net&_nc_gid=AyR_ku5Do4OdFBLg6SnSFWc&oh=01_Q5AaIB5t206kQ1DvO3pWgdsxiyvx2fgXE-FfKYGxm1RAuXiU&oe=66F89FCD">
+    </div>
+
+    <div class="container2">
+         <div class="colom21">
+                 <h2 style="font-size: 60px;font-weight: 150;line-height: 60px;">Never miss a <br> moment with <br> voice and video <br> calls</h2>
+                 <p style="font-size: 20px;line-height: 25px;margin-top: -20px;">From a group call to classmates to a quick call with mom, <br> feel like you’re in the same room with voice and video <br> calls.</p>
+                 <a  style="width: 110px;height: 30px;background-color: transparent;font-size: 16px;text-decoration: underline;text-decoration-color: #52f429e2;text-decoration-thickness: 2px;" href="">Learn more  <i style="color: black;" class="fa-solid fa-angle-right"></i></a>
+         </div>
+
+         <div class="colom22">
+                 <img style="margin-left: -50px;margin-top: 30px;" src="https://scontent.whatsapp.net/v/t39.8562-34/316211879_640016534274402_8272733547019635528_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=L0q_H6op4nEQ7kNvgFCk8KU&_nc_ht=scontent.whatsapp.net&_nc_gid=AdYOph-L5xkj_ax5DtknqHP&oh=01_Q5AaIDOtjMZxwzKJ1yExa0abQjqZ0Tq0WB5aD8fip107_cPw&oe=66F8C7D6">
+         </div>
+    </div>
+    
+    <div class="container3">
+         <div class="colom31">
+             <img src="https://scontent.whatsapp.net/v/t39.8562-34/316036583_870096634427722_4468595013887544943_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=1AKs9Fctw8AQ7kNvgF6HvvE&_nc_ht=scontent.whatsapp.net&oh=01_Q5AaIIrtG0mMITUeurVF0JtMqREBg7yQf9qEJxRI7rQJ8Jd5&oe=66F8BFB1">
+         </div>
+
+         <div class="colom32" style="margin-left: 0px;">
+                 <h2 style="color: RGB(255, 255, 255);font-size: 60px;font-weight: 100;line-height: 10px;">Speak</h2>
+                 <h2 style="color: RGB( 37, 211, 102);font-size: 60px;font-weight: 100;line-height: 10%;">freely</h2>
+                 <p style="font-size: 20px;line-height: 30px;">With end-to-end encryption, your personal messages and <br> calls are secured. Only you and the person you're talking <br> to can read or listen to them, and nobody in between, not <br> even WhatsApp.</p>
+                 <a style="width: 110px;height: 30px;background-color: transparent;font-size: 16px;text-decoration: underline;text-decoration-color: #52f429e2;text-decoration-thickness: 2px;" href="">Learn more  <i style="color: rgb(255, 255, 255);" class="fa-solid fa-angle-right"></i></a>
+         </div>
+    </div>
+   
+    <div class="container4">
+         <div class="colom41">
+                    <h2 style="font-size: 60px;font-weight: 150;line-height: 60px;">Keep in touch <br> with your groups</h2>
+                    <p style="font-size: 20px;line-height: 25px;margin-top: -20px;">Whether it's planning an outing with friends or simply <br> staying on top of your family chats, group conversations <br> should feel effortless.</p>
+                    <a style="width: 110px;height: 30px;background-color: transparent;font-size: 16px;text-decoration: underline;text-decoration-color: #52f429e2;text-decoration-thickness: 2px;" href="">Learn more  <i style="color: black;" class="fa-solid fa-angle-right"></i></a>
+         </div>
+
+         <div class="colom42">
+                         <img style="margin-top: 150px;margin-left: -100px;margin-bottom: -80px;" src="https://scontent.whatsapp.net/v/t39.8562-34/318716844_644367477472796_6799212725643495984_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=Si9zXu-JVTUQ7kNvgHvCf0q&_nc_ht=scontent.whatsapp.net&_nc_gid=A_XguDl-RQWTfF9abnUelv6&oh=01_Q5AaINbFcOjVSFVUaQlG9heBUlsPnXmVLI_Ds-tX1FbLkWiL&oe=66F9F125"> 
+                         <img style="margin-left: -130px; margin-top: -500px;" src="https://scontent.whatsapp.net/v/t39.8562-34/318759416_815630979518701_2490140615586319278_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=TytMJ6vAaj4Q7kNvgFCnMyM&_nc_ht=scontent.whatsapp.net&oh=01_Q5AaINcADW4MxH1ljYKgud4o_JdTBAt3jIig50dzTINwH-Zt&oe=66F8E28D">
+        </div>
+    </div>
+    
+    <div class="container5">
+         <div class="colom51">
+                 <img style="margin-top: 150px;" src="https://scontent.whatsapp.net/v/t39.8562-34/409964903_7655947307754468_3960711266215354357_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=qH2anQmRUgoQ7kNvgHnS8I1&_nc_ht=scontent.whatsapp.net&oh=01_Q5AaII0b_eyP4URMQeMa46H8pxb-bIXiNENK33X6yOSGz5K7&oe=66F8C340">
+                 <img style="margin-top: -1000px;width: auto;height: 300px;margin-bottom: 190px;margin-left: -350px;" src="https://scontent.whatsapp.net/v/t39.8562-34/311869879_1082331725759559_5382136804801289925_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=jXb4IJTK2ncQ7kNvgEGH5Zv&_nc_ht=scontent.whatsapp.net&oh=01_Q5AaIEKV0Jthntja5x0yVCy8i2qToGXokXYRG6lxbJVVlrCX&oe=66F8AD6F">
+         </div>
+
+         <div class="colom52" style="margin-left: -200px;margin-top: 50px;">
+                 <h2 style="font-size: 60px;font-weight: 150;line-height: 60px;">Say what <br> you feel</h2>
+                 <p style="font-size: 20px;line-height: 25px;margin-top: -20px;">Express yourself without words. Use stickers and GIFs or <br> share everyday moments on Status. Record a voice <br> message for a quick hello or a longer story.</p>
+                 <a style="width: 110px;height: 30px;background-color: transparent;font-size: 16px;text-decoration: underline;text-decoration-color: #52f429e2;text-decoration-thickness: 2px;" href="">Learn more  <i style="color: black;" class="fa-solid fa-angle-right"></i></button></a>
+         </div>
+    </div>
+   
+    <div class="container6">
+         <div class="colom61">
+                 <h2 style="font-size: 60px;font-weight: 150;line-height: 60px;">Transform <br> your business</h2>
+                 <p style="font-size: 20px;line-height: 25px;margin-top: -20px;">WhatsApp Business helps you reach your customers <br> globally to deliver compelling experiences at scale. <br> Showcase your products and services, increase sales, <br> and build relationships all with WhatsApp.</p>
+                 <a style="width: 110px;height: 30px;background-color: transparent;font-size: 16px;text-decoration: underline;text-decoration-color: #52f429e2;text-decoration-thickness: 2px;" href="">Learn more  <i style="color: black;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+         </div>
+
+         <div class="colom62">
+                 <img style="margin-left: -100px;" src="https://scontent.whatsapp.net/v/t39.8562-34/329699257_2856843487782508_7800545505417662242_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=yf6LieQcPlwQ7kNvgGuyf7r&_nc_ht=scontent.whatsapp.net&oh=01_Q5AaIEGwQd6wS9tnAsOu5geFKPq1BP-EDtUE9mL7I2VgK-9w&oe=66F8D79B">
+         </div>
+    </div>
+
+    <div class="footer">
+
+         <div class="foot1">
+
+         </div>
+
+         <div class="foot2">
+                 <a href=""><img style="width: auto;height: 40px;" src="https://static.whatsapp.net/rsrc.php/yA/r/hbGnlm1gXME.svg"></a>
+                 <button style="background-color: #25d366;border-radius: 40px;width: 150px;height: 50px;font-size: medium;border: 0;cursor: pointer;margin-top: 100px;"><a href="" style="color: black;text-decoration-color: transparent;">Download    <i class="fa-solid fa-arrow-down"></i></a></button>
+         </div>
+
+         <div class="foot3">
+                 <p style="font-size: 12px;margin-bottom: 30px;">What we do</p>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Features</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Blog</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Security</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">For Business</a>
+         </div>
+
+         <div class="foot4">
+                 <p style="font-size: 12px;margin-bottom: 30px;">Who we are</p>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">About Us</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Careers</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Brand Center</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Privacy</a>
+         </div>
+
+         <div class="foot5">
+                 <p style="font-size: 12px;margin-bottom: 30px;">Use WhatsApp</p>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Android</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">iPhone</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Mac/PC</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">WhataApp Web</a>      
+         </div>
+
+         <div class="foot6">
+                 <p style="font-size: 12px;margin-bottom: 30px;">Need help?</p>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Contact Us</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Help Center</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Download</a><br><br>
+                 <a style="color: #FFFFFF;font-size: 20px ;" href="">Security Advisorise</a>
+         </div>
+
+         <div class="foot7">
+
+         </div>
+
+    </div>
+
+    <div class="linediv">
+          <hr class="line"><br>
+    </div>
+
+    <div class="lastpart">
+         <div class="lasttext1">
+                 <p style="margin-left: 200px;">2024 © WhatsApp <br> LLC</p>
+         </div>
+
+         <div class="lasttext2">
+                 <a href="" style="text-decoration-color: transparent;"><p style="color: #FFFFFF;margin-left: 60px;" href="">Terms & Privacy <br> Policy</p></a>
+         </div>
+
+         <div class="lasttext3">
+                 <a href="" style="text-decoration-color: transparent;"><p style="color: #FFFFFF;margin-left: 60px;" href=""><br>Sitemap</p></a>
+         </div>
+
+         <div class="icon">
+                 <a style="margin-left: 50px;"  href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScS7Zq0DkZIgcnPcu8gH7qNz8suXLj8cOGDQ&s" style="border-radius: 50px;margin-top: 10px;" width="auto" height="45px"></a>
+                 <a style="margin-left: 20px;"  href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAZlBMVEUAAAD////19fX7+/v4+PiSkpLh4eHQ0NAaGhrCwsLu7u7U1NQXFxfJycnx8fG5ubmrq6tFRUVZWVlOTk4LCwsoKCg5OTmgoKDb29uCgoJhYWGLi4s/Pz8vLy9mZmbo6Oh0dHQhISFciPQlAAAJCElEQVR4nN2d6YKaMBSF2WWRXUVEAd//JQtuAxIgJ4QQe362Q5tvIMnN3aKoi2X4ibJUh8Qxlo9EWfi85uWLSV4qvGBLGMMKS14orS6htej9LIAxdlnME6VVmu0W4DDD6L554o3S6mT6umAYwy9WQXngFD7j22GD2eWroTxwck8YjLveW/ngmK4YmOx2WJul2XhumQCY83V9kqeu55VhjEIUSqsCXAggGMNffbL0dcPWNQSmMgVMlr72ZrUKjO5cRKO0ujj0eyg1jJYJ/sTeOmUabxirFv6JvXWoLb4wTroVSqvU5wkT3bZkaVa1iB9Msd+WpV3VOMG49dYorWoKY20exuJ6mGRXPb/jzMJ4y70VnHSZtdXmYLxNl7G+krlTzgwMBy8SRyW7JTC+MHufTjMbziSMuLMLrU6T82YKRqb58lY6RTMBY0nI0tBMGGrjMO4mFv+8LuNO3FEYV5K9cqhy1BYYg9G4+cP5Kx874IzA6NnWI55SNnL4HIEJj1sPeErHEIHxpNtg+orJhg0RxpXKiCEpIS4CRBiJJ/9bOS1MuPVIaUSaNgSYajM/DKIDwRIgwEhpxQyV0sAIdY0v0dDHMYDZbexVotdtcLj5hgkkNS9JGpic3zCZvfUQ6XX/Dq59wch4HhtX6k3BBD8z+58qggkY54c+sla2Pw4jhyMWUd9p24Nxth4bLmcMpuKe17O+4moEJtp6ZCyKyDDBz+z9Xd0CIsxPvpjeq/mDMe5bD4tNd50A86MvpvtqPjD6KmH+g93VOqHRkz6A4XBWtuOkzossikLH9/2d1+hs9dT+kbdr/tIJoygr8jqJOdgc4QBmkUMmySP/XAWaphmGTpkeouuG0TwQVGc/yhf975dvmB2r1++eA8ktU2xOzroCHd8BtTdMzfKv2HFGmwlCJStj++rqPozFYMkcSz7vpCvdKRk+kXfM5gWT4QtNMuLwXaoQnz921oUxavT5e8GS3kolt4AnT611YHz0KztmHIoqxmRk6KcW+x0YNBpjj0VI+EiH3SrZH0xQg88W1Ml5bILjdnXwgdmBX9mF64JM0hlcBeLdBwa0MQ8MyeCo0OU1esO44Eu9rLaQ/QkN3OfuC8bDvrK9gBcDv5pHYLCFAZ0yJ7Z6EFAeeCRxnjAGuDAnqy7LbxngEtBufA1MheViHAoRLHBgtaweMGdsv7VXssm+FWIb5816wPjQQ8px9U3mKQu0aXYtjA7uMjcxLKoKuvEivYHRauyhqygYMEuksZwV1QUfKkXBgDliV7eBOWPPEIK8K8kEB3ZuYNA4Bl2NAQehXkmngUHPMoJWZtyTlzUw6NGBspZluXbgwPIGBo0vC7HMWqGTOVUVHT2hIuV5i1SBA7N1xQUfUegPM1pU1xG74wMfmWKhj9Af/51DY/ykEau/QENHZike+gj1r9p4bhT7E6Mrx0BH5ilwKIMaRvvsejZTQTwMEypwAjMDTHsIsuDXA8NkCmo00NcPa/1/ujiDk0dHR2YqcOoPK0yzq/nY14aOrFBqcTCNmR5CReSgagUOICyBUfZ1RH9QRUeWKHCUaRFMs7JdTOq6a1CxcJhmZUtzOhwcBi5hWAzT6EqFg8PAUSoeMJ/wEFeY41YwCoUrER3ZXYGDu1xgDnPFsCwwtw0WgBaFakVDR7bFarYvMzpLQH6Yex3RWgE4jFgLwM4deoMGHVki1jbLfaSHITqyWqTVbIKHAHRkhbjzTOaCxzOG84yYk+aRvkfRRwwnTQE+gH3M5HCCYZw1vTPPl35MImHemRX9Zn5j953KkNUNyOA3W9OjGRbFgv64DB5NHbU0pfU1H3VFR6MAcA9FVqGzOZU5PgOG9B/xGTTaJm3kLGpg0F+AtDFNv4FB12Zh0WbUarTaPAAwF+oyPww+AtPnTu7/lqEha+6MzpI7g4aoRWU1gZljz6wm1cJ+BXLnm6FFwMTGIvwFbuZtYTBLjubK6eZPaWw5mnD2LIUzcrnQ1tCv7Fn1jNmaByHbJtgb+tGRroUJwM8zEXAKsMCvLA9UeWsBUKfRpxYA7pzx3buCv9hG9ICBy1XypZerzAgttXg1o3tVNoHtmfbmilVabdYNOJ5Dp7IJrgZS7uaKm41mouG8Zy0QczWgTdFxmFFVDVee1noHRo3wUtzrSkfOCG/hd38N5QVTMXQCOsQh/wraMGborpZWPRjGznl27nHk0b2craD+bfq+Yc7M3UDqsAo0YxGTbmhBFTG3VL29XXmfcMui7qxpnYW+Z1mV6wYaBZnejl8LXLeyLM8Js3pRv6tPdcIHhkM3IPuUlnVemG2vhkZOq11X/uOPmr+Koigzi7wu0xOHTg3OAEZfpw/ovqt1Oidehz00fqPhJEl/x/g/GNQbIotupL4zv/pqOv6VDoy20QUzy3TSiDC/+Wq6jq8uTCB9M+ChkmAE5hc7z/VCXz0Y1LOxvfpH3n72iC91N/ChjhPdGmfSKuXT13n3K68H7V2xrZKvyPd3khLDkXMz3b/Put8whrQXNQxVfruIBuljaLuH7TS8vmWYC4f60LYSwUlMSOz7kQ+NUP1O6j7/E5vNkeC3I6Vc/oRV4xAGTswf/YGtkxjwIsIE0k+bkhiGIGf2goFB4Rq5hmokTdmR2iFwI02YcRi5O9GOuezHYHSJF4HRaPdoNjya7CRO9Wicazy1H24UKEjjLJM30El5rcZUP8KpogsZaSZ7K05WkMh3O+DUzYBz92nKtnnOZFPM1PZ4Uhk25UxmyFyh0lmieTN7o+5s1ZUsNx0372U2OXS+hEyWq0/q+Xwdino4o5DAK3AYvXcSg1FVuH8ydx2pUtzoKhXDjS9zienSjynLLr1NF7ULZbIebQ1plW82cfYFdWU35c+pGkO2ERdd6dtw0Vf3qrtNdpwSyKIGYNRA/PV0dgaVqQM/K/4WxCuWpovB4E33FwnNn0Zh1CpZ50qcgfZ4K3UYRlWjVMDUsVOGFFAGmGYhSFfedA4pNPGXwDSnHHNV+yY22WqO2WBU3ctWw4kz1ixWRpgWZx2T4JqdmZNXmWEaHCvi7u9II7yrIxeYBsf1uZo4pY92QOEI06ridXI7ZourC/4BHi2FWFCdkjQAAAAASUVORK5CYII=" style="border-radius: 50px;margin-top: 10px;" width="auto" height="45px"></a>
+                 <a style="margin-left: 20px;"  href=""><img src="data:image/png;base64,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" style="border-radius: 50px;margin-top: 10px;" width="auto" height="45px"></a>
+                 <a style="margin-left: 20px;"  href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQbXpJkdLFnbud9iz9zbzctOlhDDFI5Z2YA_wtyxpx3Jenscpglj_hdXULWg&s" style="border-radius: 50px;margin-top: 10px;" width="auto" height="45px"></a>
+         </div>
+
+         <div class="lasttext4">
+                 <select name="Language" id="Language">
+                         <option value="English">English</option>
+                         <option value="Hindi">Hindi</option>
+                 </select>
+         </div>
+    </div>
+
+</body>
+</html>
